@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState } from 'react';
 
 const VideoFrameSelector = () => {
     const [videoFile, setVideoFile] = useState<string | null>(null);

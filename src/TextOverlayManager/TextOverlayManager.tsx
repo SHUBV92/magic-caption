@@ -18,7 +18,7 @@ interface TextOverlayManagerProps {
 }
 
 const TextOverlayManager = ({ overlays, onOverlaysChange, duration, currentTime }: TextOverlayManagerProps) => {
-    const [isAdding, setIsAdding] = useState(false);
+    const [isAdding, _setIsAdding] = useState(false);
 
     const addOverlay = () => {
         const newOverlay: TextOverlay = {
@@ -31,7 +31,7 @@ const TextOverlayManager = ({ overlays, onOverlaysChange, duration, currentTime 
             color: '#ffffff'
         };
         onOverlaysChange([...overlays, newOverlay]);
-        setIsAdding(false);
+        _setIsAdding(false);
     };
 
     const updateOverlay = (id: string, updates: Partial<TextOverlay>) => {

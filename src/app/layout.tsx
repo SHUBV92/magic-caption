@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from './providers/ThemeProvider';
 
 const geist = Geist({ subsets: ["latin"] });
-const geist_mono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Magic Caption",

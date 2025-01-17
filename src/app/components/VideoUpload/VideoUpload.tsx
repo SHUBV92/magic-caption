@@ -3,7 +3,6 @@
 import React, { useState, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Button } from "@/components/ui/button";
 import Transcription from '../Transcription/Transcription';
 
 interface VideoFile extends File {

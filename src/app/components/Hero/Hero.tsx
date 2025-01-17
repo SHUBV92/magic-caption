@@ -6,21 +6,21 @@ import Link from 'next/link';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0 }
+  visible: { opacity: 1, y: 0 },
 };
 
 const Hero = () => {
   const slogans = [
-    "Transform Your Content",
-    "Engage Your Audience",
-    "Break Language Barriers"
+    'Transform Your Content',
+    'Engage Your Audience',
+    'Break Language Barriers',
   ];
 
   return (
     <div className="relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900" />
-      
+
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 sm:pt-24 sm:pb-20">
         <div className="lg:grid lg:grid-cols-12 lg:gap-8">
           {/* Left column - Text content */}
@@ -29,7 +29,7 @@ const Hero = () => {
               initial="hidden"
               animate="visible"
               variants={{
-                visible: { transition: { staggerChildren: 0.3 } }
+                visible: { transition: { staggerChildren: 0.3 } },
               }}
             >
               <motion.h1
@@ -41,10 +41,7 @@ const Hero = () => {
                 </span>
               </motion.h1>
 
-              <motion.div 
-                variants={fadeInUp}
-                className="mt-3 space-y-1"
-              >
+              <motion.div variants={fadeInUp} className="mt-3 space-y-1">
                 {slogans.map((slogan, index) => (
                   <p
                     key={slogan}
@@ -60,7 +57,8 @@ const Hero = () => {
                 variants={fadeInUp}
                 className="mt-8 text-lg text-gray-600 dark:text-gray-300"
               >
-                Create professional captions in minutes. Perfect for content creators, educators, and businesses.
+                Create professional captions in minutes. Perfect for content
+                creators, educators, and businesses.
               </motion.p>
 
               <motion.div
@@ -128,7 +126,7 @@ const Hero = () => {
                   className="absolute bottom-4 left-4 right-4 bg-white/90 dark:bg-gray-800/90 p-4 rounded-lg backdrop-blur-sm"
                 >
                   <div className="text-sm font-medium text-gray-900 dark:text-white">
-                    "Hello everyone, welcome to this tutorial..."
+                    Hello everyone, welcome to this tutorial...
                   </div>
                   <div className="text-xs text-gray-500 mt-1">
                     Generated caption with 99% accuracy
